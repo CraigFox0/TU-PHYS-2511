@@ -1,11 +1,17 @@
 import random
 import time
-
+print("Welcome to the Magic 8 Ball!")
 question = input("What is your question? ")
+while question[len(question)-1] != '?':
+    print()
+    print("A question must contain a question mark at the end")
+    print("Please ask again with a question mark")
+    print()
+    question = input("What is your question? ")
 print("Thinking...")
 time.sleep(random.randint(20,40)/10)
-#TODO check for question mark
 print("Your question was " + question)
+
 def answer(i):
     switcher={
     1:"It is certain",
@@ -30,4 +36,5 @@ def answer(i):
     20:"Very doubtful"
     }
     return switcher.get(i, "Error: Invalid Response")
+
 print("My answer is: " + answer(random.randint(1,20)))
