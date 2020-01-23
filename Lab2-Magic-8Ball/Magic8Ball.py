@@ -4,7 +4,7 @@ import time
 question = input("What is your question? ")
 print("Thinking...")
 time.sleep(random.randint(20,40)/10)
-//TODO check for question mark
+#TODO check for question mark
 print("Your question was " + question)
 def answer(i):
     switcher={
