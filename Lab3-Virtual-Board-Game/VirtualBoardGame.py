@@ -15,7 +15,7 @@ def checkSpace(player, space):
         #sends another random player to spot one
         playerToPunish = random.randint(0, players-1)
         print("Player " + str(player) + " landed on a multiple of 13")
-        print("Player " + str(playerToPunish) + " was punished by being sent to Spot One")
+        print("Player " + str(playerToPunish) + " was punished by being sent to spot 1")
         playerPositions[playerToPunish] = 1
     elif space % 10 == 0:
         #roll one die forward
