@@ -1,3 +1,12 @@
+import matplotlib
+import matplotlib.pyplot as ptl
+
+def setupChart():
+    ptl.clf()
+    ptl.xlabel(r"$Chapter(Letters1-4)$")
+    ptl.ylabel(r"$Mentions$")
+    ptl.ylim(0, 20)
+    ptl.xlim(0, 29)
 
 chapters = [""]
 i = 0
@@ -26,10 +35,9 @@ Henry = []
 Justine = []
 William = []
 
-
 for x in chapters:
     Victor.append(x.count("Victor"))
-    Creature.append(x.count("Creature"))
+    Creature.append(x.count("creature"))
     Agatha.append(x.count("Agatha"))
     Caroline.append(x.count("Caroline"))
     De_Lacey.append(x.count("De Lacey"))
@@ -50,3 +58,38 @@ print("Felix: " + str(Felix))
 print("Henry: " + str(Henry))
 print("Justine: " + str(Justine))
 print("William: " + str(William))
+
+ptl.figure()
+setupChart()
+ptl.bar(list(range(1,29)), Victor) #1 to 28 for each chapter including the letters
+ptl.savefig("Victor.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), Creature)
+ptl.savefig("Creature.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), Agatha)
+ptl.savefig("Agatha.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), Caroline)
+ptl.savefig("Caroline.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), De_Lacey)
+ptl.savefig("De_Lacey.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), Elizabeth)
+ptl.savefig("Elizabeth.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), Ernest)
+ptl.savefig("Ernest.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), Felix)
+ptl.savefig("Felix.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), Henry)
+ptl.savefig("Henry.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), Justine)
+ptl.savefig("Justine.png", format="png")
+setupChart()
+ptl.bar(list(range(1,29)), William)
+ptl.savefig("William.png", format="png")
