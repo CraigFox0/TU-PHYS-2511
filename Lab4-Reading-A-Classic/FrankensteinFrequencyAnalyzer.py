@@ -93,3 +93,24 @@ ptl.savefig("Justine.png", format="png")
 setupChart()
 ptl.bar(list(range(1,29)), William)
 ptl.savefig("William.png", format="png")
+
+#Characters who appear in the same chapters (meet):
+
+#(5)	Caroline, Creature, Elizabeth, Victor
+#(6)	Elizabeth, Henry, Victor
+#(10)	Creature, Elizabeth, Earnest, Justine, Victor, William
+#(11)	Caroline, Creature, Elizabeth, Earnest, Henry, Justine, Victor, William
+#(16)	Agatha, Creature
+#(17)	Agatha, Creature, Felix
+#(18)	Agatha, DeLacey, Felix
+#(19)	Agatha, Creature, DeLacey, Felix
+
+#Characters who do not meet:
+
+#Agatha: Earnest, Elizabeth, Henry, Justine, Victor, William
+#Caroline: Agatha, DeLacey, Felix
+#DeLacey: Elizabeth, Earnest, Henry, Justine, Victor, William
+
+#Characters who either die or are not mentioned again in the script:
+
+#Agatha, Caroline, DeLacey, Henry
