@@ -26,14 +26,20 @@ def integrateComplicatedFunction(size):
         startPoint = startPoint + size
     return area
 
-xValues = [.001, .002, .005, .01, .02, .05, .1, .2, .5, 1]
+
+
+xValues = [.001, .002, .005, .01, .02, .05, .1, .2, .5, 1] #random values chosen to show the difference in accuracy
 yLinePercentDifference = []
 yParabolaPercentDifference = []
 yComplicatedPercentDifference = []
+
+#calculates percent difference for integration of lines
 for x in xValues:
     yLinePercentDifference.append(round(abs(100-(100*integrateLine(x)/40.0)), 4))
     yParabolaPercentDifference.append(round(abs(100-(100*integrateParabola(x)/100.83)), 4))
     yComplicatedPercentDifference.append(round(abs(100-(100*integrateComplicatedFunction(x)/27.72)), 4))
+
+#Plots Change in X vs Accuracy of retangular integration for all three equations
 plt.figure()
 plt.xlabel(r"$Delta X$")
 plt.ylabel(r"$Percent Difference$")
