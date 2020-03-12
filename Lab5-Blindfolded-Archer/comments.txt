@@ -1,3 +1,0 @@
-Good work, but angle needs to be tunable, too.
-
-The random targeting failed to hit the target for me in 5 minutes (I grabbed some coffee).  It should hit, eventually, but it is a sub-optimal solution (It takes me 7-12 tries with hand-input values).
